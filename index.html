@@ -1,0 +1,339 @@
+<html>
+<head>
+<title>Haresh Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<style> 
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&display=swap');
+
+*{
+border:0;
+margin:0;
+box-sizing:border-box;}
+html{
+scroll-behavior:smooth;
+}
+body{
+ background-color:#dcddde;}
+nav ul{
+width:50vw; position:absolute; right:6px;
+}
+header{ height:13vh; position:sticky; top:0px;
+display:flex; flex-direction:row; overflow:visible;
+background-color:#595959;}
+.logo h4{ width:15vw;
+position:absolute; left:10px;
+padding:6px; color:white;  font-family: 'Caveat', cursive; font-weight:bold; font-size:22px;}
+.logo h4 span{ color:#edc80e;}
+li{
+float:right;
+list-style:none;
+display:inline-block;
+padding:6px;
+}
+a{
+text-decoration:none;
+color:white;
+}
+.navbar ul{overflow:auto;
+}
+.navbar ul a{ position:relative;}
+.navbar ul a::after{
+content:'';
+width:0;
+height:2px;
+background:#1187d1;
+position:absolute;
+left:0px;
+bottom:-4px;
+transition:3s;
+}
+.navbar ul a:hover::after{ width:100%;}
+.navbar ul span{ display:none;}
+.material-symbols-outlined{ display:none;}
+input { display:none;}
+
+/*middil section  CSS code*/
+.mid{ background-color:#dcddde; overflow:hidden;
+display:flex; flex-direction:row;
+}
+.div1{ padding:4px;
+ width:60%; margin:auto;
+ align-self:center;
+ text-align:center;
+ }
+ .div1 h4{ font-size:25px; color:#1f1f1f;}
+ .div1 h4 b { color:#edc80e; font-size:30px; padding:6px; text-shadow:1px 1px black;}
+ .div1 font{ position:relative; top:4px; font-size:23px; color:#1f1f1f; font-family: 'Alegreya Sans SC', sans-serif;}
+ .div1 p { color:#2b2b2b; font-size:13px; width:80%;
+  margin:auto;  position:relative; top:9px; font-family: 'Nunito', sans-serif;}
+.div2{ 
+ width:40%;
+ } .div2 img{ shadow:3px 3px black; overflow:hidden;}
+ 
+ /* skill section */
+ .skill { overflow:hidden;}
+ .sk span{ font-size:10px;}
+ .skill h3{ }
+  h4{ margin-left:15px; font-size:1em;}
+ .sk span{ margin-left:20px;}
+ .d{margin-bottom:6px; margin-top:6px;}
+ .sk{ background-color:white; width:60vw; margin-left:15px;
+      border:none; border-radius:10px;}
+ .s1{background-color:#03fca5; width:80%; ;
+      border:none; border-radius:10px;}  
+ .s2{background-color:#03fca5; width:60%; ;
+ border:none; border-radius:10px;}     
+ .s3{background-color:#03fca5; width:67%; ;
+ border:none; border-radius:10px;}     
+ .s4{background-color:#03fca5; width:45%; ;
+      border:none; border-radius:10px;}  
+ .s5{background-color:#03fca5; width:0%; ;
+ border:none; border-radius:10px;}     
+ .s6{background-color:#03fca5; width:30%; ;
+ border:none; border-radius:10px;}   
+  .s7{background-color:#03fca5; width:0%; ;
+  border:none; border-radius:10px;}     
+  .s8{background-color:#03fca5; width:85%; ;
+     border:none; border-radius:10px;}  
+  .s9{background-color:#03fca5; width:85%; ;
+  border:none; border-radius:10px;}     
+  .s10{background-color:#03fca5; width:10%; ;
+  border:none; border-radius:10px;}   
+  .s11{background-color:#03fca5; width:0%; ;
+   border:none; border-radius:10px;}  
+   
+   /* education section */
+ .education{ overflow:hidden; padding:20px 0;}
+ .edu-list{ display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+ grid-gap:20px;}
+ .edu{padding:20px; font-size:12px; border-radius:10px; background-color:white; transition:0.5s;}
+ .edu:hover{ background-color:#03fca5; transform:translateY(-5px);} 
+.edu p{ font-size:12px;  margin-top:20px;}
+ .edu h4{ font-size:20px; margin-bottom:10px;}
+ .edu b{ font-size:13px; margin-bottom:10px; }
+ 
+ /*  Project Section   */
+ .project{ overflow:hidden; padding:30px 0;}
+ .work-list{ display:grid; grid-template-columns:repeat(auto-fit, minmax(225px,1fr));
+ grid-gap:20px;}
+ .work-list div{ padding:20px; font-size:12px; border-radius:10px;  background-color:white; transition:0.5s;}
+ .work-list div:hover{ background-color:#03fca5; transform:translateY(-5px);}
+ .work-list div span{display:block; font-size:30px; margin-bottom:10px;}
+ .work-list div h2{ font-size:20px; font-weight:600; margin-bottom:15px;}
+ .work-list div a{ color:#edc80e; font-size:12px; margin-top:20px; display:inline-block;}
+ #l1{ font-size:50px; color:#9542f5;}
+ #l2{ font-size:40px; color:#eb4247;}
+ #l3{ font-size:50px; color:#1ebf15;}
+ 
+ /*footer section of our website*/
+ footer{ height:7vh;
+ background-color:#dcddde; 
+ position:sticky; bottom:0px;
+ }
+ footer a{ padding: 0px 6px 2px 10px;
+ color:#2b2b2b; letter-spacing:4px; font-size:12px;}
+ @media only screen and (max-width:600px){
+ header{height:5%;}
+ .material-symbols-outlined{ display:block;}
+.sidemenu{ display:flex; flex-direction:column-reverse; background:#edc80e; cursor:pointer;
+ z-index:2; height:40vh; width:100%; position:fixed; top:5vh; right:0%; 
+ transition: 0.6s  ease-in-out; clear:both;  } 
+ .sidemenu.active{ right:100%}
+  .navbar span{ position:absolute; top:5px; left:90vw; cursor:pointer;}
+ .navbar ul span{ display:block; font-size:35px; position:absolute; top:10px; left:20px; cursor:pointer;}
+ .sidemenu li{ padding:15px; position:relative; top:-50px; right:0px;  font-weight:500px;}
+ .sidemenu li a{ color:white; font-size:20px; margin-top:20px; margin-bottom:20px; font-family: 'Nunito', cursive;}
+ .navbar input{ display:none;  cursor:pointer;}
+ header leble{ display:block;}
+ .navbar .material-symbols-outlined{ font-size:30px; color:#03fca5;}
+
+ 
+ 
+ .icon{ display:none;}
+ .mid{display:block; height:70%; }
+.div1{ position:relative; top:80px; 
+margin:auto; padding:0px;}
+.div1 p{ width:100%;}
+.div2{ margin:70px; position:relative; top:40px;}
+footer{ height:5%;}
+footer a{ position:sticky; bottom:-110px;
+margin:0px 2px 0 2px;}
+ }
+</style>
+</head>
+</head>
+<body>
+
+<!--herder part -->
+<header>
+<div class="logo">
+<h4><span>H</span>ARESH <span class="icon">✓</span></h4>
+</div>
+<nav class="navbar">
+<ul class="sidemenu active" id="menu-links">
+<li><a href="#projects" >Services</a></li>
+<li><a href="#education" >Education</a></li>
+<li><a href="#skills" >Skills</a></li>
+<li><a href="#mid">Home</a></li>
+</label>
+</ul><input type="checkbox" id="menu-bar">
+<label for="menu-bar"><span id="#menu" class="material-symbols-outlined" >
+menu
+</span></label>
+</nav>
+</header>
+
+<!-- middil section part-->
+<section id="mid" class="mid">
+<div class="div1">
+<h4> Hi I'm <b>Haresh</b> </h4>
+<font id="text"></font>
+<P> To secure a challenging position in a reputable organization to expand my learnings, knowledge, and
+skills.</P>
+</div>
+<div class="div2">
+<img src="20230106_154551.png" width="250px" >
+</div>
+</section>
+
+<!-- skill section-->
+<section id="skills" class="skills">
+<h3 align="center" style="margin-bottom:10px; 
+     margin-top:40px; font-size:25;">Skills</h3>
+<div class="web">
+<h4>Web Development</h4>
+<div class="d">
+<div class="sk"><div class="s1"><span>HTML</span></div></div>
+</div>
+<div class="d">
+<div class="sk"><div class="s2"><span>CSS</span></div></div>
+</div>
+<div class="d">
+<div class="sk"><div class="s3"><span>JAVA SCPRIT</span></div></div>
+</div>
+</div>
+<div class="android">
+<h4>Android Development</h4>
+<div class="d">
+<div class="sk"><div class="s4"><span>JAVA</span></div></div>
+</div>
+<div class="d">
+<div class="sk"><div class="s5"><span>KOTLIN</span></div></div>
+</div>
+<div class="d">
+<div class="sk"><div class="s6"><span>XML</span></div></div>
+</div>
+</div>
+<div class="dsa">
+<h4>DSA</h4>
+<div class="d">
+<div class="sk"><div class="s7"><span>DSA</span></div>
+</div>
+</div>
+</div>
+<div class="other">
+<h4>Other Tchnology</h4>
+<div class="d">
+<div class="sk"><div class="s8"><span>PYTHON</span></div></div>
+</div>
+<div class="d">
+<div class="sk"><div class="s9"><span>C & C++</span></div></div>
+</div>
+<div class="d">
+<div class="sk"><div class="s10"><span>DBMS</span></div></div>
+</div>
+<div class="d">
+<div class="sk"><div class="s11"><span>OS</span></div></div>
+</div>
+</div>
+</section>
+
+<!-- education section-->
+<section id="education" class="education">
+<h2 align="center" style="margin-bottom:10px; 
+     margin-top:40px; font-size:25;">Education</h2>
+<div class="edu-list">
+<div class="edu">
+<h4>BCA</h4>
+<b>M.P.C. Autonumos College, Baripada.</b><br>
+<p>Present</p>
+</div>
+<div class="edu">
+<h4>12th</h4>
+<b>Remuna H.S. School, Remuna.</b><br>
+<p>Passing : 2022 </p><p>83.5% in CHSE Boards</p>
+</div>
+<div class="edu">
+<h4>10th</h4>
+<b>Kurunia High School, Remuna.</b><br>
+<p>Passing : 2020 </p><p>75% in BSE Boards<p>
+</div>
+</section>
+
+<!-- project section-->
+<section id="projects" class="projects">
+     <h2 align="center" style="margin-bottom:10px; 
+     margin-top:40px; font-size:25;">Services</h2>
+ <div class="work-list">
+  <div> <span id="l1" class="material-symbols-outlined">
+  code
+  </span>
+    <h2>Web Development</h2>
+    <p>I can make fullstack and responsiv website's. Examples 
+    like Portfolio, Service website, Educational website,
+    Web app, web game, etc. </p>
+    <a href="https://amaclass.ml/" >Learn more</a>
+  </div>
+  <div> <span id="l2" class="material-symbols-outlined">
+  youtube_activity
+  </span>
+  <h2>Containt Creator</h2>
+  <p>I can make fullstack and responsiv website's. Examples 
+  like Portfolio, Service website, Educational website,
+  Web app, web game, etc. </p>
+  <a href="https://youtube.com/@AmaClass" >Learn more</a>
+  </div>
+  <div> <span id="l3" class="material-symbols-outlined">
+  android
+  </span>
+  <h2>App Development</h2>
+  <p>I can make fullstack and responsiv website's. Examples 
+  like Portfolio, Service website, Educational website,
+  Web app, web game, etc. </p>
+  <a href="#" >Learn more</a>
+  </div>
+ </div>
+</section>
+
+<!--footer part -->
+<footer>
+<a href="https://www.linkedin.com/in/haresh-panigrahi-825939242" target="_blank" >LinkedIn</a>
+<a href="https://github.com/Haresh79" target="_blank" >GitHub</a>
+<a href="https://youtube.com/@AmaClass" target="_blank">YouTube</a>
+<a href="https://mobile.twitter.com/class_ama" target="_blank">Twitter</a>
+</footer>
+
+<script>
+let x=Math.floor((Math.random()*100)+1);
+if(x<20 || x>80){
+i=0;
+}
+else if(x<40 || x>60){
+i=1;
+}
+else { i=2; }
+console.log(x);
+let text=["YOUTUBER","WEB DEVELOPER","ANDROID DEVELOPER"]
+document.getElementById('text').innerHTML=text[i];
+
+const toggleButton= document.getElementById('menu-bar');
+const navLinks= document.getElementById('menu-links');
+toggleButton.addEventListener('click',()=>{
+              navLinks.classList.toggle('active');
+})
+</script>
+</body>
+</html>
